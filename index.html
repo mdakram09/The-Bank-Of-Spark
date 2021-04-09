@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Banking System</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- AOS  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body >
+
+  <!-- loader for splash screen -->
+  
+  <!--Navbar Starts Here-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><strong>The Bank of Spark</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li>
+            <a class="nav-link active" aria-current="page" href="./index.html" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./customers.html" >Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./transfer.html" >Transfer Money</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here  -->
+
+
+  <!-- here content starts here -->
+  
+  <div class="container-fluid hero-content">
+    <div class="row align-items-center">
+      <div class="col-md-12 col-sm-12 text-center" data-aos="fade-down" style="margin-top: 50px;">
+        <h1 ><span style="color: #3c7e3c;">Transfer Your Money</span> <span id="sp" class="font-weight-bold">Without Any Fear</span></h1>
+        <p class="lead muted" style="color: #3c7e3c;">TRANSFER MONEY <span id="sp" class="font-weight-bold">FAST AND SECURE</span></p>
+
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg" onclick="location.href = './customers.html';">Customer
+          Details</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="location.href = './transfer.html';">Transfer
+          Money</button>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-- here content ends here -->
+
+  <!--===== ABOUT =====-->
+  <section class="about section " id="about" data-aos="fade-up">
+    <h2 class="section-title" style="color:#ec3849;font-weight: bolder;text-align: center; margin-top: 50px;">About The Bank</h2>
+
+    <div class="about__container bd-grid">
+        
+        <div>
+            <h3 class="about__subtitle" style="text-align: center;margin-top: 30px;font-weight: bolder; color: #3c7e3c;">Welcome to The Bank of Spark</h3>
+            <p class="about__text" style="text-align: center; color: #f13b4d; "><strong>TBS</strong> is one of world’s leading private banks<br> and was among the first to receive approval from the Universe bank to set up a private sector bank in 111.<br>
+
+
+Today, The Bank of Spark  has a banking network of 10,000 branches and 23,456 ATMs spread across 2,866 cities and towns.</p> 
+        </div>
+        
+        
+                      
+                                         
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start" style="margin-top: 80px;">
+    <!-- Grid container -->
+    
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #d2c086;" >
+      © 2021 Copyright:
+      <p class="love">Made with  <i class="fa fa-heart pulse"></i>  by Md Akram Khan</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+  <!-- spalsh screen js -->
+  <script>
+    var preloader = document.getElementById("loading");
+    function loader() {
+      preloader.style.display = 'none';
+    }
+  </script>
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+  <!-- aos data  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+    });
+  </script>
+
+</body>
+
+</html>
